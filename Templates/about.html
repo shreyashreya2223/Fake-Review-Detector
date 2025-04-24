@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - Fake Review Detector</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('learn') }}">Learn</a>
+    <a href="{{ url_for('tips') }}">Tips</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+<a href="{{ url_for('home') }}">Home</a>
+
+  </nav>
+
+  <header>
+    <h1>About Fake Review Detector</h1>
+    <p>Understanding the importance of real reviews</p>
+  </header>
+
+  <main style="padding: 40px; max-width: 800px; margin: auto;">
+    <h2>What is Fake Review Detection?</h2>
+    <p>Fake reviews are misleading or fraudulent comments meant to deceive customers. Our AI model uses Natural Language Processing (NLP) and machine learning to detect suspicious patterns and flag them.</p>
+    <p>This project helps consumers make better decisions and brings more transparency to online platforms.</p>
+  </main>
+  <footer>
+    <p>&copy; Minor Project</p>
+    <div class="footer-links">
+      <a href="{{ url_for('faq') }}">FAQs</a> |
+      <a href="{{ url_for('credits') }}">Credits</a>
+    </div>
+  </footer>
+</body>
+</html>

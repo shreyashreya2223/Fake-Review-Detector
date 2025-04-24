@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learn - Fake Review Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('learn') }}">Learn</a>
+    <a href="{{ url_for('tips') }}">Tips</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('home') }}">Home</a>
+    
+  </nav>
+
+  <header>
+    <h1>Learn About Fake Reviews</h1>
+    <p>Gain deep insights into the tactics and traits of fake online reviews to stay informed and protected.</p>
+  </header>
+
+  <main class="info-section" style="padding: 40px; max-width: 900px; margin: auto;">
+    <section>
+      <h2>Understanding Fake Reviews</h2>
+      <p>Fake reviews are misleading feedback posted with the intent to deceive potential customers. These can be positive to artificially boost a product’s rating or negative to damage competitors.</p>
+
+      <h3>1. Why Fake Reviews Exist</h3>
+      <p>Companies may use fake reviews to boost sales, counteract poor genuine reviews, or harm a competitor's reputation. With the rise of e-commerce, fake reviews have become a powerful tool to manipulate public opinion.</p>
+
+      <h3>2. Common Characteristics of Fake Reviews</h3>
+      <ul>
+        <li><strong>Over-the-top Praise:</strong> Using exaggerated, enthusiastic language without specific product details.</li>
+        <li><strong>Vague or Generic Statements:</strong> Comments like "Great product!" without elaboration.</li>
+        <li><strong>One-Time Reviewers:</strong> Accounts that only post once, often without a profile picture or history.</li>
+        <li><strong>Repetition:</strong> Identical or nearly identical reviews across multiple products or listings.</li>
+        <li><strong>Suspicious Timing:</strong> Multiple reviews posted in a short time span, indicating automation.</li>
+      </ul>
+
+      <h3>3. Real vs. Fake Review Patterns</h3>
+      <p>Authentic reviews often mention personal usage experiences, pros and cons, specific product features, and sometimes even include constructive criticism. In contrast, fake reviews tend to be extreme, polarized, and impersonal.</p>
+
+      <h3>4. Impact of Fake Reviews</h3>
+      <p>Fake reviews can mislead customers, affect purchasing decisions, reduce trust in platforms, and harm genuine businesses. Detecting and reporting them is essential for maintaining a healthy digital marketplace.</p>
+
+      <h3>5. How You Can Help</h3>
+      <ul>
+        <li>Report suspicious reviews on platforms like Amazon or Google.</li>
+        <li>Cross-check reviews with multiple sources and look for patterns.</li>
+        <li>Use tools or plugins that flag potential fake reviews.</li>
+        <li>Educate others about review authenticity and how to identify red flags.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Minor Project</p>
+    <div class="footer-links">
+      <a href="{{ url_for('faq') }}">FAQs</a> |
+<a href="{{ url_for('credits') }}">Credits</a>
+
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake Review Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <nav>
+    <a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('learn') }}">Learn</a>
+<a href="{{ url_for('tips') }}">Tips</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+<a href="{{ url_for('home') }}">Home</a>
+
+  </nav>
+
+  <header>
+    <h1>Fake Review Detector</h1>
+    <p>Analyze and detect suspicious reviews with AI</p>
+  </header>
+
+  <main>
+    <div class="review-box">
+      <textarea id="review" placeholder="Paste your review here..."></textarea>
+      <button onclick="submitReview()">Analyze Review</button>
+    </div>
+
+    <div id="result-card" class="hidden">
+      <h2>Analysis Result</h2>
+      <p id="result"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Minor Project</p>
+    <div class="footer-links">
+      <a href="{{ url_for('faq') }}">FAQs</a> |
+<a href="{{ url_for('credits') }}">Credits</a>
+
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+</html>

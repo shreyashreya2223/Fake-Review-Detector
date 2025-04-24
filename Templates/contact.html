@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Fake Review Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('learn') }}">Learn</a>
+    <a href="{{ url_for('tips') }}">Tips</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('home') }}">Home</a>
+    
+  </nav>
+  <header>
+    <h1>Contact Us</h1>
+    <p>Have any questions or feedback? We'd love to hear from you!</p>
+  </header>
+  <main class="info-section">
+    <h2>Get in Touch</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Minor Project</p>
+    <div class="footer-links">
+      <a href="{{ url_for('faq') }}">FAQs</a> |
+<a href="{{ url_for('credits') }}">Credits</a>
+
+    </div>
+  </footer>
+</body>
+</html>

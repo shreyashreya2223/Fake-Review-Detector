@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tips - Fake Review Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <nav>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('learn') }}">Learn</a>
+    <a href="{{ url_for('tips') }}">Tips</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('home') }}">Home</a>
+
+  </nav>
+  <header>
+    <h1>Tips to Identify Fake Reviews</h1>
+    <p>Become a more informed and confident online shopper.</p>
+  </header>
+  <main style="padding: 40px; max-width: 900px; margin: auto; font-size: 1.1rem;">
+    <section class="info-section">
+      <h2>How to Spot Fake Reviews</h2>
+      <ul style="line-height: 1.8;">
+        <li><strong>Exaggerated Praise:</strong> Be cautious of reviews using phrases like "best ever" or "absolutely
+          perfect" without context.</li>
+        <li><strong>Reviewer Activity:</strong> Check if the reviewer has only one review or has a suspicious profile.
+        </li>
+        <li><strong>Repetitive Wording:</strong> Watch for repeated phrases across multiple reviews, which may indicate
+          copy-pasting.</li>
+        <li><strong>Vague Feedback:</strong> Avoid reviews that are overly emotional but provide no specific product
+          details.</li>
+        <li><strong>Use Detection Tools:</strong> Leverage AI-powered platforms—like this one—to detect patterns of
+          authenticity.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Minor Project</p>
+    <div class="footer-links">
+      <a href="{{ url_for('faq') }}">FAQs</a> |
+      <a href="{{ url_for('credits') }}">Credits</a>
+
+    </div>
+  </footer>
+</body>
+
+</html>

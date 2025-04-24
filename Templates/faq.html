@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQs - Fake Review Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('learn') }}">Learn</a>
+      <a href="{{ url_for('tips') }}">Tips</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('home') }}">Home</a>
+      
+      </nav>
+  <header>
+    <h1>Frequently Asked Questions</h1>
+    <p>Got questions? We’ve got answers!</p>
+  </header>
+  <main class="info-section">
+    <h2>What is a fake review?</h2>
+    <p>A fake review is a misleading or paid review intended to boost or harm a product's rating.</p>
+
+    <h2>How does your detector work?</h2>
+    <p>We use machine learning models trained on datasets of labeled reviews to detect suspicious patterns.</p>
+
+    <h2>Can this tool detect all fake reviews?</h2>
+    <p>No, but it gives you a strong signal by analyzing text features and linguistic cues.</p>
+  </main>
+  <footer>
+    <p>&copy; Minor Project</p>
+    <div class="footer-links">
+      <a href="{{ url_for('faq') }}">FAQs</a> |
+<a href="{{ url_for('credits') }}">Credits</a>
+
+    </div>
+  </footer>
+</body>
+</html>
